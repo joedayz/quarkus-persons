@@ -1,0 +1,8 @@
+.mvn/
+target/
+
+.settings/
+.vscode/
+
+.classpath
+.project
