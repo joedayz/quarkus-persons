@@ -1,0 +1,19 @@
+
+<div class="container">
+  <h1>Quarkus REST Service</h1>
+
+
+   <person-viewer [detail]="person" (add)="onAddPerson($event)"></person-viewer>
+
+  <h3>Person List</h3>
+  <div class="row">
+      <div class="col-2">Id</div>
+      <div class="col-4">Name</div>
+      <div class="col-6">Surname</div>
+  </div>
+  <div class="row" *ngFor="let person of persons;">
+      <div class="col-2">{{ person.id }}</div>
+      <div class="col-4">{{ person.name }}</div>
+      <div class="col-6">{{ person.surname }}</div>
+  </div>
+</div>
